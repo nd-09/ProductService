@@ -2,8 +2,9 @@ package com.scaler.productservice.controllers;
 
 import com.scaler.productservice.models.Product;
 import com.scaler.productservice.services.ProductService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -16,9 +17,9 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable("id") Long id){
-//        return new Product();
-        return productService.getProductById(id);
+    public ResponseEntity<Product> getProductById(@PathVariable("id") Long id){
+        Product pd=productService.getProductById(id);
+        return new ResponseEntity<>(pd, HttpStatus.OK );
     }
     @GetMapping
     public List<Product> getAllProducts(){
@@ -42,4 +43,5 @@ public class ProductController {
     public void deleteProduct(@RequestBody Long id){
         return;
     }
+
 }

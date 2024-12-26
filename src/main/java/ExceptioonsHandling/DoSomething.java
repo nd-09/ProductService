@@ -1,4 +1,4 @@
-package com.scaler.productservice.ExceptioonsHandling;
+package ExceptioonsHandling;
 
 public class DoSomething {
 

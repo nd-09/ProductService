@@ -1,4 +1,4 @@
-package com.scaler.productservice.ExecutorService;
+package ExecutorService;
 
 public class Value {
     int val;

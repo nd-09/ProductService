@@ -1,6 +1,4 @@
-package com.scaler.productservice.ExceptioonsHandling;
-
-import java.util.Iterator;
+package ExceptioonsHandling;
 
 public class Client {
     public static void main(String[] args) {

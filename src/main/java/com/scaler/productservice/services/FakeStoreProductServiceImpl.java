@@ -3,7 +3,10 @@ package com.scaler.productservice.services;
 import com.scaler.productservice.dtos.FakeStoreProductDTO;
 import com.scaler.productservice.models.Category;
 import com.scaler.productservice.models.Product;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RequestCallback;
+import org.springframework.web.client.ResponseExtractor;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
@@ -56,6 +59,7 @@ public class FakeStoreProductServiceImpl implements ProductService {
 
     @Override
     public Product replaceProduct(Long id, Product product) {
+
         return null;
     }
 
